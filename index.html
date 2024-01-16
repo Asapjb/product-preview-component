@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="(https://fonts.google.com/specimen/Montserrat), (https://fonts.google.com/specimen/Fraunces)"
+    />
+  </head>
+  <body>
+    <div class="product-preview">
+      <div class="product-preview--content">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="images/image-product-mobile.jpg"
+          />
+          <source
+            media="(min-width: 601px) and (max-width: 2500px)"
+            srcset="images/image-product-desktop.jpg"
+          />
+          <img
+            class="product__image"
+            src="images/image-product-mobile.jpg"
+            alt=""
+          />
+        </picture>
+        <div class="product--body">
+          <p class="body__name">PERFUME</p>
+          <h1 class="body__heading">Gabrielle Essence Eau De Parfum</h1>
+          <p class="body__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+            distinctio nesciunt numquam neque nam rerum quo perspiciatis,
+            obcaecati atque expedita?
+          </p>
+          <footer class="product--footer">
+            <div class="footer__price">
+              <h1 class="footer__heading">$149.99</h1>
+              <p class="initial__price">$169.99</p>
+            </div>
+            <button class="product__btn">
+              <img src="images/icon-cart.svg" alt="" />
+              Add to cart
+            </button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
